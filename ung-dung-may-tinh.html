@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <h2> Calculator</h2>
+<input type="text" id="So1">
+<input type="text" id="So2">
+    <br>
+    <button onclick="Add()">Addition(+)</button>
+    <button onclick="Sub()">Subtraction(-)</button>
+    <button onclick="Mul()">Multiplication(x)</button>
+    <button onclick="Div()">Division(/)</button>
+    <br>
+    <h3>Result Division :</h3>
+<script>
+    function Add() {
+        let number1 = parseInt(document.getElementById("So1").value);
+        let number2 = parseInt(document.getElementById("So2").value);
+        let Result = number1+number2;
+        alert(Result);
+    }
+    function Sub() {
+        let number1 = parseInt(document.getElementById("So1").value);
+        let number2 = parseInt(document.getElementById("So2").value);
+        let Result = number1-number2
+        alert(Result);
+    }
+    function Mul() {
+        let number1 = parseInt(document.getElementById("So1").value);
+        let number2 = parseInt(document.getElementById("So2").value);
+        let Result = number1*number2
+        alert(Result);
+    }
+    function Div() {
+        let number1 = parseInt(document.getElementById("So1").value);
+        let number2 = parseInt(document.getElementById("So2").value);
+        let Result = number1/number2
+        alert(Result);
+    }
+</script>
+
 </body>
 </html>
